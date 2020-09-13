@@ -3,12 +3,17 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.time.LocalDate;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+//@Entity
 public class Pet extends BaseEntity {
-    private PetType petType;
+//    @Id
+//    private Long id;
+//    private PetType petType;
     private Owner owner;
     private LocalDate localeDate;
 }
